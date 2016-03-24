@@ -26,7 +26,7 @@ public class CustomDrinkActivity extends Activity{
     private TextView textProgressThirdDrink;
     private TextView textProgressTemp;
 
-    // Button next
+    // Button
     Button btnNext;
 
     // Values of drinks
