@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0%"
+        android:id="@+id/firstDrinkValue"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="49dp"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:layout_alignTop="@+id/textViewWater"
+        android:layout_toEndOf="@+id/textViewCoffee"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Your order contains:"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="52dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Water:"
+        android:id="@+id/textViewWater"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="50dp"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Coffee:"
+        android:id="@+id/textViewCoffee"
+        android:layout_marginTop="40dp"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:layout_below="@+id/textViewWater"
+        android:layout_alignStart="@+id/textViewWater"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Tea:"
+        android:id="@+id/textViewTea"
+        android:layout_marginTop="40dp"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:layout_below="@+id/textViewCoffee"
+        android:layout_alignStart="@+id/textViewCoffee"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="At the temperature:"
+        android:id="@+id/textViewAtTheTemp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/textViewTea"
+        android:layout_alignStart="@+id/textViewTea"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0%"
+        android:id="@+id/secondDrinkValue"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:layout_alignTop="@+id/textViewCoffee"
+        android:layout_alignStart="@+id/firstDrinkValue"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0%"
+        android:id="@+id/thirdDrinkValue"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:layout_alignTop="@+id/textViewTea"
+        android:layout_alignStart="@+id/secondDrinkValue"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/tempValue"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_alignTop="@+id/textViewAtTheTemp"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PROCEED TO PAYMENT"
+        android:id="@+id/btnToPayment"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="25dp"
+        android:layout_alignStart="@+id/tempValue" />
+
+</RelativeLayout>

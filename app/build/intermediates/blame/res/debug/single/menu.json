@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/Alex/Documents/Android Studio Projects/MixerBot/app/build/intermediates/res/merged/debug/menu/menu_main.xml",
+        "source": "/Users/Alex/Documents/Android Studio Projects/MixerBot/app/src/main/res/menu/menu_main.xml"
+    },
+    {
+        "merged": "/Users/Alex/Documents/Android Studio Projects/MDM/app/build/intermediates/res/merged/debug/menu/menu_main.xml",
+        "source": "/Users/Alex/Documents/Android Studio Projects/MDM/app/src/main/res/menu/menu_main.xml"
+    }
+]

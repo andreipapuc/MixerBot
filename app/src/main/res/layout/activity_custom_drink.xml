@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- Warning note -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Note: ingredients&apos; values must add up to 100"
+        android:id="@+id/textWarning"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:layout_alignEnd="@+id/textProgressFirstDrink"
+        android:layout_alignParentStart="true"
+        android:paddingTop="10dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp" />
+
+    <!-- First drink seekbar -->
+    <SeekBar
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarFirstDrink"
+        android:layout_marginTop="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/textProgressFirstDrink" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textProgressFirstDrink"
+        android:layout_gravity="right"
+        android:gravity="center"
+        android:layout_alignTop="@+id/seekBarFirstDrink"
+        android:layout_alignParentEnd="true"
+        android:text="0%"
+        android:layout_alignStart="@+id/textView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Water"
+        android:id="@+id/textFirstDrink"
+        android:layout_above="@+id/textProgressFirstDrink"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="34dp"
+        android:textAlignment="center" />
+
+
+    <!-- Second drink seekbar -->
+    <SeekBar
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarSecondDrink"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/seekBarFirstDrink"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textProgressSecondDrink"
+        android:layout_gravity="right"
+        android:gravity="center"
+        android:layout_alignTop="@+id/seekBarSecondDrink"
+        android:layout_alignParentEnd="true"
+        android:text="0%"
+        android:layout_alignStart="@+id/textProgressFirstDrink" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Coffee"
+        android:id="@+id/textSecondDrink"
+        android:layout_above="@+id/textProgressSecondDrink"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="34dp"
+        android:textAlignment="center" />
+
+    <!-- Third drink seekbar -->
+    <SeekBar
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarThirdDrink"
+        android:layout_below="@+id/seekBarSecondDrink"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="51dp" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textProgressThirdDrink"
+        android:layout_gravity="right"
+        android:gravity="center"
+        android:layout_alignTop="@+id/seekBarThirdDrink"
+        android:layout_alignParentEnd="true"
+        android:text="0%"
+        android:layout_toEndOf="@+id/seekBarThirdDrink"
+        android:layout_alignStart="@+id/textProgressSecondDrink" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Tea"
+        android:id="@+id/textThirdDrink"
+        android:layout_above="@+id/textProgressThirdDrink"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="34dp"
+        android:textAlignment="center" />
+
+    <!-- Temperature seekbar -->
+    <SeekBar
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarTemp"
+        android:layout_below="@+id/textProgressThirdDrink"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="61dp"
+        android:layout_alignEnd="@+id/textProgressThirdDrink" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Temperature"
+        android:id="@+id/textTemp"
+        android:textAlignment="center"
+        android:layout_alignBottom="@+id/seekBarTemp"
+        android:layout_alignStart="@+id/textThirdDrink"
+        android:layout_marginBottom="23dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:id="@+id/btnNext"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Room Temp"
+        android:id="@+id/textViewRoomTemp"
+        android:layout_below="@+id/seekBarTemp"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Hot"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/seekBarTemp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Blazing Hot"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/seekBarTemp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textProgressTemp"
+        android:layout_gravity="right"
+        android:gravity="center"
+        android:text="15°C"
+        android:layout_alignTop="@+id/textTemp"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/seekBarThirdDrink" />
+
+
+</RelativeLayout>

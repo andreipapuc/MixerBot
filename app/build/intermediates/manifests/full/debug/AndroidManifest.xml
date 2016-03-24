@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.huskybits.alex.mdm"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="22"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="MixerBot"
+        android:theme="@android:style/Theme.Material.Light.DarkActionBar" >
+        <activity
+            android:name="com.huskybits.alex.mdm.MainScreenActivity"
+            android:configChanges="orientation"
+            android:label="MixerBot"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--
+        New
+
+        <service
+            android:name="com.paypal.android.sdk.payments.PayPalService"
+            android:exported="false" />
+
+        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+
+        <activity
+            android:name="io.card.payment.CardIOActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="io.card.payment.DataEntryActivity" />
+
+        New till here
+        -->
+
+
+        <!-- Custom Drink Activity -->
+        <activity
+            android:name="com.huskybits.alex.mdm.CustomDrinkActivity"
+            android:configChanges="orientation"
+            android:label="Custom drink"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- Summary Activity -->
+        <activity
+            android:name="com.huskybits.alex.mdm.SummaryActivity"
+            android:configChanges="orientation"
+            android:label="Order summary"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- Payment Activity -->
+        <activity
+            android:name="com.huskybits.alex.mdm.PaymentActivity"
+            android:configChanges="orientation"
+            android:label="Your order"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- Payment Activity -->
+
+
+        <!-- QR Encoding Activity -->
+        <activity
+            android:name="com.huskybits.alex.mdm.QRCode.GenerateQRCodeActivity"
+            android:configChanges="orientation"
+            android:label="Scan the code to MixerBot"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!--
+        Standard Drinks Activity
+        <activity
+            android:name=".StandardDrinksActivity"
+            android:label="Choose a drink" >
+        </activity>
+        -->
+
+        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PayPalProfileSharingActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.ProfileSharingConsentActivity" />
+
+        <service
+            android:name="com.paypal.android.sdk.payments.PayPalService"
+            android:exported="false" />
+
+        <activity
+            android:name="io.card.payment.CardIOActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="io.card.payment.DataEntryActivity" />
+    </application>
+
+</manifest>
